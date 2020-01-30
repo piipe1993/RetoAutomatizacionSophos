@@ -1,0 +1,47 @@
+group 'pe.com.tottus'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.58")
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'net.serenity-bdd:serenity-core:2.0.58'
+    testCompile 'net.serenity-bdd:serenity-junit:2.0.58'
+    testCompile('org.assertj:assertj-core:3.11.1')
+    testCompile('org.slf4j:slf4j-simple:1.7.25')
+    testCompile "net.serenity-bdd:serenity-screenplay-rest:2.0.58"
+    testImplementation 'io.rest-assured:json-schema-validator:4.2.0'
+    testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.1.2'
+
+
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.0.58'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.0.58'
+    compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.43'
+    compile 'net.serenity-bdd:serenity-core:2.0.58'
+    compile 'net.serenity-bdd:serenity-junit:2.0.58'
+
+    compile group: 'com.mashape.unirest', name: 'unirest-java', version: '1.4.9'
+    compile group: 'com.github.fge', name: 'json-schema-validator', version: '2.2.6'
+    compile group: 'io.rest-assured', name: 'xml-path', version: '4.1.2'
+
+
+
+
+}
