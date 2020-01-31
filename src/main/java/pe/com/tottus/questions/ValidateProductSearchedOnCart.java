@@ -5,6 +5,11 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import pe.com.tottus.userinterfaces.TottusHomePage;
 
+/**
+ * Clase recibe el nombre del producto en el carrito para ser validado en el stepDefinition contra el valor del Feature
+ * @author Andres Cardona
+ */
+
 public class ValidateProductSearchedOnCart implements Question <String> {
 
 

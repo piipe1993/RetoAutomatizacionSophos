@@ -2,9 +2,12 @@ package pe.com.tottus.questions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.questions.Text;
 import pe.com.tottus.tasks.ConsumeService;
-import pe.com.tottus.userinterfaces.TottusHomePage;
+
+/**
+ * Clase recibe el StatusCode del response del servicio para ser validado en el stepDefinition contra el valor del Feature
+ * @author Andres Cardona
+ */
 
 public class ValidateDataService implements Question<String> {
 

@@ -5,10 +5,13 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
-import pe.com.tottus.models.DataRequest;
-
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static org.hamcrest.Matchers.equalTo;
+
+/**
+ * Clase que recibe los parametros del endpoint y token para consumir servicio Get y guardar el
+ * StatusCode del response
+ * @author Andres Cardona
+ */
 
 public class ConsumeService implements Task {
     public static int statusCode;

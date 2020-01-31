@@ -25,13 +25,13 @@ public class AddProduct implements Task {
     @Step
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(WaitUntil.the(TottusHomePage.BUTTON_ADD, isPresent()),
-                Click.on(TottusHomePage.BUTTON_ADD)
-               // Scroll.to(TottusHomePage.OPTION_SHOW_CART).andAlignToTop(),
-                //WaitUntil.the(TottusHomePage.OPTION_SHOW_CART,isPresent()).forNoMoreThan(10).seconds()
+                Click.on(TottusHomePage.BUTTON_ADD),
+                Scroll.to(TottusHomePage.OBJECT_TO_SCROLL),
+                WaitUntil.the(TottusHomePage.OPTION_SHOW_CART,isPresent())
         );
     }
 
-    public static AddProduct toCart (){
+    public static AddProduct toCart() {
         return instrumented(AddProduct.class);
     }
 }

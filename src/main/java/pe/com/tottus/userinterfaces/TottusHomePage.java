@@ -35,9 +35,9 @@ public class TottusHomePage extends PageObject {
     public static final Target CANCEL_POPUP = Target.the("Button cancel popup")
             .located(By.id("onesignal-popover-cancel-button"));
 
+    public static final Target OBJECT_TO_SCROLL = Target.the("element in top of the page")
+            .located(By.className("HeaderTopNav"));
 
-   /* public static final Target LABEL_PRODUCT_NAME = Target.the("contenedor de Nombre del producto ")
-            .located(By.className("info-wrapper"));*/
 
 
 }
