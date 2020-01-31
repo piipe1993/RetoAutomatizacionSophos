@@ -7,4 +7,4 @@ Feature: Validate service response code
 
     Examples:
       |endpoint|token|code|message                           |
-      |https://gorest.co.in/public-api/users/5|?access-token=ttWaYh_-ZPFVsYfyMguJj22wvaBpsKWqMEsJ|200 |OK. Everything worked as expected.|
+      |https://gorest.co.in/public-api/users/5|?access-token=ttWaYh_-ZPFVsYfyMguJj22wvaBpsKWqMEsJ|200|OK. Everything worked as expected.|
